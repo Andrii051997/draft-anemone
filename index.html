@@ -5,30 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <section class="delivery">
-      <h2 class="delivery-title">DELIVERY</h2>
-      <ul class="delivery-list list">
-        <li class="delivery-item">
-          Choose your bouquet and make an order on website
-        </li>
-        <li class="delivery-item">
-          Wait for the call to clarify the details of the order. You can pay
-          online or to the courier
-        </li>
-        <li class="delivery-item">
-          Wait for the delivery at the selected time or pick up the order from
-          the store
-        </li>
-        <li class="delivery-item">Make someone happy or enjoy yourself</li>
+      <div class="container">
+        <h2 class="delivery-title">DELIVERY</h2>
+        <ul class="delivery-list list">
+          <li class="delivery-item">
+            <p class="delivery-item-number">1</p>
+            <p class="delivery-item-custom">
+              Choose your bouquet and make an order on website
+            </p>
+          </li>
+          <li class="delivery-item">
+            <p class="delivery-item-number">2</p>
+            <p class="delivery-item-custom">
+              Wait for the call to clarify the details of the order. You can pay
+              online or to the courier
+            </p>
+          </li>
+          <li class="delivery-item">
+            <p class="delivery-item-number">3</p>
+            <p class="delivery-item-custom">
+              Wait for the delivery at the selected time or pick up the order
+              from the store
+            </p>
+          </li>
+          <li class="delivery-item">
+            <p class="delivery-item-number">4</p>
+            <p class="delivery-item-custom">
+              Make someone happy or enjoy yourself
+            </p>
+          </li>
+        </ul>
         <img
+          class="img-delivery"
+          srcset="
+            ./img/image-delivery-mob.jpg         320w,
+            ./img/image-delivery-mob-2x.jpg      640w,
+            ./img/image-delivery-tablet.jpg      768w,
+            ./img/image-delivery-tablet-2x.jpg  1536w,
+            ./img/image-delivery-desktop.jpg    1280w,
+            ./img/image-delivery-desktop-2x.jpg 2560w
+          "
+          sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, (min-width: 320px) 3200px, 100vw"
           src="./img/image-delivery-mob.jpg"
           alt="image-delivery"
-          width="320"
-          height="135"
+          loading="lazy"
         />
-      </ul>
+      </div>
+    </section>
+    <section class="blog">
+      <h2 class="blog-title">BLOG</h2>
+      <img
+        class="img-blog"
+        srcset="
+          ./img/blog-flowers-mob-1.jpg        136w,
+          ./img/blog-flowers-mob-1-2x.jpg     272w,
+          ./img/blog-flowers-tablet-1.jpg     344w,
+          ./img/blog-flowers-tablet-1-2x.jpg  688w,
+          ./img/blog-flowers-desktop-1.jpg    390w,
+          ./img/blog-flowers-desktop-1-2x.jpg 780w
+        "
+        sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+        src="./img/blog-flowers-mob-1.jpg"
+        alt="blog-flowers"
+        loading="lazy"
+      />
+      <img
+        class="img-blog"
+        srcset="
+          ./img/blog-flowers-mob-2.jpg        136w,
+          ./img/blog-flowers-mob-2-2x.jpg     272w,
+          ./img/blog-flowers-tablet-2.jpg     344w,
+          ./img/blog-flowers-tablet-2-2x.jpg  688w,
+          ./img/blog-flowers-desktop-2.jpg    390w,
+          ./img/blog-flowers-desktop-2-2x.jpg 780w
+        "
+        sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+        src="./img/blog-flowers-mob-1.jpg"
+        alt="blog-flowers"
+        loading="lazy"
+      />
+      <img
+        class="img-blog"
+        srcset="
+          ./img/blog-flowers-mob-3.jpg        136w,
+          ./img/blog-flowers-mob-3-2x.jpg     272w,
+          ./img/blog-flowers-tablet-3.jpg     344w,
+          ./img/blog-flowers-tablet-3-2x.jpg  688w,
+          ./img/blog-flowers-desktop-3.jpg    390w,
+          ./img/blog-flowers-desktop-3-2x.jpg 780w
+        "
+        sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+        src="./img/blog-flowers-mob-1.jpg"
+        alt="blog-flowers"
+        loading="lazy"
+      />
+      <button type="button" class="btn-svg">
+        <svg width="5px" height="38px">
+          <use href="./img/svg-sprite.svg#icon-down-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="btn-svg">
+        <svg width="5px" height="38px">
+          <use href="./img/svg-sprite.svg#icon-down-right"></use>
+        </svg>
+      </button>
+      <p class="blog-follow">Follow to our newsletter</p>
+      <button type="button" class="btn-follow">Subscribe</button>
     </section>
   </body>
 </html>
