@@ -23,11 +23,12 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  min-width: 288px;
   padding-right: 16px;
   padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 .delivery {
@@ -49,7 +50,7 @@ img {
 .delivery-title::after {
   content: "";
   display: inline-block;
-  width: 148px;
+  width: 100%;
   border: 1px solid #000000;
 }
 
@@ -89,18 +90,22 @@ img {
 
 .img-delivery {
   text-align: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 320px;
+    min-width: 288px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    min-width: 720px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -112,10 +117,6 @@ img {
   .delivery-title {
     font-size: 44px;
     margin-bottom: 60px;
-  }
-
-  .delivery-title::after {
-    width: 473px;
   }
 
   .delivery-list {
@@ -137,11 +138,11 @@ img {
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1280px;
-  }
-
-  .delivery-title::after {
-    width: 985px;
+    min-width: 1232px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .delivery-item-number {
@@ -182,7 +183,7 @@ blog
 .blog-title::after {
   content: "";
   display: inline-block;
-  width: 202px;
+  width: 100%;
   border: 1px solid #000000;
 }
 
@@ -238,7 +239,7 @@ blog
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 320px;
+    min-width: 288px;
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -246,7 +247,7 @@ blog
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    min-width: 720px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -259,10 +260,6 @@ blog
     font-size: 44px;
     line-height: 1.22;
     margin-bottom: 60px;
-  }
-
-  .blog-title::after {
-    width: 573px;
   }
 
   .img-blog-wrap {
@@ -297,7 +294,7 @@ blog
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1280px;
+    min-width: 1232px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -307,10 +304,6 @@ blog
     font-size: 44px;
     line-height: 1.22px;
     margin-bottom: 122px;
-  }
-
-  .blog-title::after {
-    width: 1085px;
   }
 
   .img-blog-wrap {
