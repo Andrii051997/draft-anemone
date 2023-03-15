@@ -1,3 +1,8 @@
+/* 
+===============
+BASIS STYLES
+=============== */
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -23,13 +28,20 @@ img {
 }
 
 .container {
-  min-width: 288px;
+  display: block;
+  max-width: 288px;
+  margin-right: 0;
+  margin-left: 0;
   padding-right: 16px;
   padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
   outline: 1px solid red;
+  background-color: green;
 }
+
+/* 
+===============
+DELIVERY
+=============== */
 
 .delivery {
   padding-bottom: 60px;
@@ -88,24 +100,23 @@ img {
   padding-right: 8px;
 }
 
-.img-delivery {
-  text-align: center;
-  /* width: 100vw; */
+.img-delivery-wrap {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    min-width: 288px;
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.img-delivery {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 720px;
+    max-width: 720px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -138,11 +149,11 @@ img {
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1232px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 1232px;
     padding-right: 24px;
     padding-left: 24px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
   }
 
   .delivery-item-number {
@@ -161,7 +172,7 @@ img {
 
 /* 
 ===============
-blog
+BLOG
 =============== */
 .blog {
   padding-bottom: 60px;
@@ -191,7 +202,7 @@ blog
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 26px;
+  margin: 0 0 26px 0;
 }
 
 .img-blog-3 {
@@ -237,17 +248,15 @@ blog
   background: #e25b41;
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   .container {
     min-width: 288px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 720px;
+    max-width: 720px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -294,9 +303,7 @@ blog
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1232px;
-    padding-right: 24px;
-    padding-left: 24px;
+    max-width: 1232px;
   }
 
   .blog-title {
