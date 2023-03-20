@@ -1,7 +1,8 @@
 /* 
 ===============
 BASIS STYLES
-=============== */
+=============== 
+*/
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -28,14 +29,12 @@ img {
 }
 
 .container {
-  display: block;
-  max-width: 288px;
+  width: 320px;
   margin-right: 0;
   margin-left: 0;
   padding-right: 16px;
   padding-left: 16px;
   outline: 1px solid red;
-  background-color: green;
 }
 
 /* 
@@ -45,7 +44,6 @@ DELIVERY
 
 .delivery {
   padding-bottom: 60px;
-  display: block;
 }
 
 .delivery-title {
@@ -114,9 +112,15 @@ DELIVERY
   max-width: 100%;
 }
 
+/* @media screen and (min-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+} */
+
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    min-width: 768px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -149,11 +153,7 @@ DELIVERY
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1232px;
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-right: 0 auto;
-    margin-left: 0 auto;
+    min-width: 1280px;
   }
 
   .delivery-item-number {
@@ -176,7 +176,6 @@ BLOG
 =============== */
 .blog {
   padding-bottom: 60px;
-  display: block;
 }
 
 .blog-title {
@@ -202,11 +201,29 @@ BLOG
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  margin: 0 0 26px 0;
+  /* margin: 0 0 26px 0; */
 }
 
 .img-blog-3 {
   display: none;
+}
+
+.btn-svg-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.btn-blog {
+  width: 40px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-svg-blog {
+  fill: #000000;
 }
 
 .blog-follow {
@@ -248,19 +265,7 @@ BLOG
   background: #e25b41;
 }
 
-/* @media screen and (min-width: 480px) {
-  .container {
-    min-width: 288px;
-  }
-} */
-
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
   .blog {
     padding-bottom: 100px;
   }
@@ -302,10 +307,6 @@ BLOG
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1232px;
-  }
-
   .blog-title {
     font-weight: 700;
     font-size: 44px;
